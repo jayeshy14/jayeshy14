@@ -11,7 +11,7 @@ cross chain). Currently architecting a multi-chain wealth management protocol at
 
 **Blok Capital** — modular, multi-chain wealth management protocol. Diamond Factory with CREATE2 deterministic addresses; DAO-governed Facet Registry that validates facet additions, removals, and replacements; onchain market-cap-weighted crypto indices with automated rebalancing, ERC-5484 SBT pass system and CCTP + CCIP for cross-chain USDC and messaging.
 
-**Learning in public** — zero-knowledge proofs. Working through Justin Thaler's *Proofs, Arguments, and Zero-Knowledge*, Dan Boneh's cryptography course, and the 0xPARC / zk-learning curriculum. Building toward circuit-level competence (Halo2, Noir, SP1) on top of existing EVM depth. Notes and progress in [zk-journey](https://github.com/jayeshy14/zk-journey).
+**Learning in public** — zero-knowledge proofs. Working through Justin Thaler's *Proofs, Arguments, and Zero-Knowledge*, Dan Boneh's cryptography course, and the 0xPARC / zk-learning curriculum. Building toward circuit-level competence (Halo2, Noir, SP1) on top of existing EVM depth. Notes and progress in [zk-book-notes](https://github.com/jayeshy14/zk-book-notes).
 
 **Interested in** — composable DeFi primitives, upgradeable protocol design, account abstraction (ERC-4337), zkEVM internals, ZK coprocessors, privacy DeFi.
 
@@ -21,13 +21,11 @@ cross chain). Currently architecting a multi-chain wealth management protocol at
 
 | Repo | What it is |
 |------|------------|
-| [Prism](https://github.com/jayeshy14/Prism) | Modular smart contract proxy |
-| [BlokC-Diamond](https://github.com/jayeshy14/BlokC-Diamond) | Diamond proxy implementation |
-| [DAO-Diamond](https://github.com/jayeshy14/DAO-Diamond) | DAO-governed Diamond protocol |
-| [CEX-Backend](https://github.com/jayeshy14/CEX-Backend) | Centralized exchange backend with a matching engine running 1000+ TPS |
-| [bitcoin-bank](https://github.com/jayeshy14/bitcoin-bank) | Bitcoin P2P lending and borrowing platform with risk-adjusted repayment |
-
----
+| [Prism](https://github.com/jayeshy14/Prism) | Draft ERC — Modular Capability Proxy superseding EIP-1967 / 1822 / 2535 |
+| [BlokC-Diamond](https://github.com/jayeshy14/BlokC-Diamond) | EIP-2535 Diamond with Facet Registry, Garden Factory (CREATE2), and DEX pool registry |
+| [CEX-Backend](https://github.com/jayeshy14/CEX-Backend) | Centralized-exchange backend — matching engine, multi-chain deposits, order book |
+| [bitcoin-bank](https://github.com/jayeshy14/bitcoin-bank) | Bitcoin-backed P2P lending on Stacks with risk-adjusted α-split repayment |
+| [Mastering-Ethereum-Notes](https://github.com/jayeshy14/Mastering-Ethereum-Notes) | Chapter-by-chapter notes on Antonopoulos & Wood's *Mastering Ethereum* |
 
 ---
 
@@ -51,8 +49,8 @@ Uniswap V4 Incubator (Atrium) · Smart Contract Security, Advanced Foundry, Adva
 ## Reach me
 
 - **X / Twitter** — [@0xjayeshyadav](https://x.com/0xjayeshyadav)
-- **LinkedIn** — [linkedin.com/in/jayeshyadav](https://www.linkedin.com/in/jayeshyadav) <!-- TODO: confirm URL -->
-- **Email** — [jayesh](jayeshnyadav497@gmail.com)
+- **LinkedIn** — [linkedin.com/in/jayeshyadav](https://www.linkedin.com/in/jayeshyadav)
+- **Email** — [jayeshnyadav497@gmail.com](mailto:jayeshnyadav497@gmail.com)
 
 Open to conversations on protocol design, Diamond pattern at scale, ZK coprocessors, and the EVM ↔ ZK boundary.
 
