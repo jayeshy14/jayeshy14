@@ -2,7 +2,7 @@
 <h3 align="center">Protocol Architect</h3>
 <p align="center">Open to new protocol engineering roles (remote)</p>
 
-Two years designing and building in DeFi on EVM chains. Deep expertise in EIP-2535 Diamond proxy, ERC-4626 vaults, and composable DeFi integration (DEXs, lending, yield, cross-chain). At [Blok Capital](https://github.com/BLOKCapital), architected a modular multichain wealth management protocol with the components like Diamond as user vaults, Diamond Factory,Facet Registry, multiple yield strategies, onchain indices with automated rebalancing, CCTP + CCIP cross-chain. Currently building in public and going deep on zk proofs.
+Two years designing and building in DeFi on EVM chains. Deep expertise in EIP-2535 Diamond proxy, ERC-4626 vaults, and composable DeFi integration (DEXs, lending, yield, cross-chain). At [Blok Capital](https://github.com/BLOKCapital), architected a modular multichain wealth management protocol: Diamond proxy vaults with a CREATE2 factory, DAO-governed Facet Registry, multiple yield strategies, onchain indices with automated rebalancing, and CCTP + CCIP for cross-chain USDC transfers. Currently building in public and going deep on zk proofs.
 
 ---
 
