@@ -14,7 +14,7 @@ Two years designing and building in DeFi on EVM chains. Deep expertise in EIP-25
 
 **Uniswap V4 Diamond Hook:** Upgradeable V4 hook framework using EIP-2535. Hook address stays permanent while logic is upgradeable via `diamondCut`, eliminating pool migration on upgrades. Solved V4's permission-bit address constraint by mining the CREATE2 salt once at deploy. → [repo](https://github.com/jayeshy14/uniswap-v4-hook-diamond)
 
-**ZK proofs:** Working through the RareSkills ZK course (zero-knowledge proofs from first principles). Posting weekly progress on [Twitter](https://x.com/0xjayeshyadav). Notes in [zk-book-notes](https://github.com/jayeshy14/zk-book-notes).
+**ZK proofs:** Working through the RareSkills ZK course (zero-knowledge proofs from first principles). Posting weekly progress on [Twitter](https://x.com/0xjayeshyadav).
 
 ---
 
