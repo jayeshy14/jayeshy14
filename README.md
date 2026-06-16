@@ -1,48 +1,30 @@
 <h1 align="center">Hi there, I'm Jayesh Yadav</h1>
-<h3 align="center">Protocol Architect</h3>
-<p align="center">Open to new protocol engineering roles (remote)</p>
+<h3 align="center">Smart Contract / Protocol Engineer</h3>
+<p align="center">Open to remote protocol engineering roles</p>
 
-Two years designing and building in DeFi on EVM chains. Deep expertise in EIP-2535 Diamond proxy, ERC-4626 vaults, ERC-7579 modular accounts, and composable DeFi integration (DEXs, lending, yield, cross-chain). At [Blok Capital](https://github.com/BLOKCapital), architected a modular multichain wealth management protocol: Diamond proxy vaults with a CREATE2 factory, DAO-governed Facet Registry, multiple yield strategies, onchain indices with automated rebalancing, and CCTP + CCIP for cross-chain USDC transfers. Currently building in public and studying zero-knowledge proofs.
-
----
-
-## What I'm building
-
-**Coffer:** Self-custodial, modular smart-vault protocol on ERC-7579 + ERC-4337 v0.7. Every user gets their own programmable smart account that holds their funds and executes DeFi strategies (Aave V3, Uniswap V2/V3). Pluggable validator/executor/hook modules, deterministic CREATE2 deployment (up to 10 coffers per user), an ExecutorRegistry for clean DEX routing, and a funds-safe KillSwitch that blocks capital-deploying actions in emergencies while always leaving withdrawals open. → [repo](https://github.com/jayeshy14/coffer-contracts)
-
-**Vault Router:** ERC-4626 compliant yield vault on the Diamond proxy pattern (EIP-2535), routing deposits across Morpho Blue, Aave V3, and Pendle PT strategy facets on Arbitrum. Curator-governed allocation with per-strategy caps, idle reserve enforcement, and a Facet Registry for strategy allow-listing. → [repo](https://github.com/jayeshy14/Vault-Router)
-
-**Uniswap V4 Diamond Hook:** Upgradeable V4 hook framework using EIP-2535. Hook address stays permanent while logic is upgradeable via `diamondCut`, eliminating pool migration on upgrades. Solved V4's permission-bit address constraint by mining the CREATE2 salt once at deploy. → [repo](https://github.com/jayeshy14/uniswap-v4-hook-diamond)
-
-**ZK proofs:** Working through the RareSkills ZK course (zero-knowledge proofs from first principles). Posting weekly progress on [Twitter](https://x.com/0xjayeshyadav).
+Two years designing and building in DeFi on EVM chains, with a focus on upgrade safety, vault architecture, and manipulation-resistant accounting. My depth is in EIP-2535 Diamonds and ERC-4626 vaults, with working knowledge of ERC-7579 / ERC-4337 modular accounts and composable DeFi integration across DEXs, lending, yield, and cross-chain. At [Blok Capital](https://github.com/BLOKCapital) I architected a modular multichain wealth-management protocol: Diamond proxy vaults with a CREATE2 factory, a DAO-governed Facet Registry, onchain indices with automated rebalancing, and cross-chain USDC via CCTP and CCIP. Currently building an autonomous, market-cap-weighted index vault, and studying zero-knowledge proofs on the side.
 
 ---
 
 ## Selected work
 
-| Repo | What it is |
-|------|------------|
-| [coffer-contracts](https://github.com/jayeshy14/coffer-contracts) | ERC-7579 modular smart accounts on ERC-4337 v0.7. Self-custodial vaults with executor registry, kill switch, and multi-protocol strategy execution |
-| [Vault-Router](https://github.com/jayeshy14/Vault-Router) | ERC-4626 + EIP-2535 Diamond vault routing across Morpho, Aave, and Pendle on Arbitrum |
-| [Diamond-Storage-Detector](https://github.com/jayeshy14/Diamond-Storage-Detector) | Static analysis tool detecting storage slot collisions across EIP-2535 Diamond facets |
-| [uniswap-v4-hook-diamond](https://github.com/jayeshy14/uniswap-v4-hook-diamond) | Upgradeable Uniswap V4 hook framework. Permanent hook address, logic upgradeable via diamondCut |
+**Index Protocol** — a pooled, autonomous, market-cap-weighted index vault on Ethereum mainnet. An ERC-7540 async superset of ERC-4626 with two-lane liquidity, an on-chain methodology engine (iterative capping with exact invariants and free-float weighting), and a layered circulating-supply oracle (trustless on-chain derivation, multi-source median with divergence freeze, and rate-limited containment). Core vault, methodology, and oracle are implemented and tested; CoW-settled rebalancing is in progress. → [repo](https://github.com/jayeshy14/index-protocol)
+
+**Diamond Storage Collision Detector** — a static-analysis tool that catches storage-slot collisions across EIP-2535 facets before deployment, where a collision silently corrupts shared state across facets. → [repo](https://github.com/jayeshy14/Diamond-Storage-Detector)
+
+**Vault Router** — an ERC-4626 yield vault on the Diamond proxy pattern, routing deposits across Morpho Blue, Aave V3, and Pendle PT strategy facets on Arbitrum, with curator-governed allocation, per-strategy caps, and idle-reserve enforcement. → [repo](https://github.com/jayeshy14/Vault-Router)
+
+**Uniswap V4 Diamond Hook** — an upgradeable V4 hook framework on EIP-2535. The hook address stays permanent via a once-mined CREATE2 salt while logic upgrades through `diamondCut`, eliminating pool migration on hook upgrades. → [repo](https://github.com/jayeshy14/uniswap-v4-hook-diamond)
 
 ---
 
 ## Stack
 
-**Languages** &nbsp; Solidity · Rust · TypeScript · JavaScript  
-**Frameworks** &nbsp; Foundry · Hardhat · OpenZeppelin  
-**Standards** &nbsp; EIP-2535 · ERC-7579 · ERC-4626 · ERC-4337 · ERC-5484 · ERC-1967 · EIP-7201  
-**DeFi protocols** &nbsp; Uniswap V4 · Morpho · Aave · Pendle · Camelot · Chainlink  
-**Cross-chain** &nbsp; CCTP · CCIP  
-**Infra** &nbsp; Dune · Tenderly · The Graph · IPFS  
-
----
-
-## Certifications
-
-Uniswap V4 Incubator (Atrium) · Smart Contract Security, Advanced Foundry, Advanced Uniswap V3 (Cyfrin Updraft) · Web3 Dev, Blockchain Security Expert, Fintech Expert, Solana Development (101 Blockchains)
+**Depth** &nbsp; EIP-2535 Diamonds · ERC-4626 vaults · storage layout and upgrade safety (EIP-1967, ERC-7201) · Foundry fuzz and invariant testing
+**Working knowledge** &nbsp; ERC-7579 / ERC-4337 modular accounts · Chainlink oracles · CCTP / CCIP cross-chain
+**Languages** &nbsp; Solidity · Rust · TypeScript · JavaScript
+**Tooling** &nbsp; Foundry · Hardhat · OpenZeppelin · Dune · Tenderly
+**DeFi** &nbsp; Uniswap V4 · Morpho · Aave · Pendle · Camelot · Chainlink
 
 ---
 
@@ -52,4 +34,4 @@ Uniswap V4 Incubator (Atrium) · Smart Contract Security, Advanced Foundry, Adva
 - **LinkedIn:** [linkedin.com/in/jayeshyadav](https://www.linkedin.com/in/jayeshyadav)
 - **Email:** [jayeshnyadav497@gmail.com](mailto:jayeshnyadav497@gmail.com)
 
-Open to conversations on protocol design, Diamond pattern at scale, vault architecture, and the EVM ↔ ZK boundary.
+Open to conversations on protocol design, the Diamond pattern at scale, and vault architecture.
