@@ -1,37 +1,66 @@
 <h1 align="center">Hi there, I'm Jayesh Yadav</h1>
-<h3 align="center">Smart Contract / Protocol Engineer</h3>
-<p align="center">Open to remote protocol engineering roles</p>
+<h3 align="center">Smart Contract Engineer · EVM</h3>
+<p align="center">Vaults · Structured Products · Capital Protection · Tranching</p>
 
-Two years designing and building in DeFi on EVM chains, with a focus on upgrade safety, vault architecture, and manipulation-resistant accounting. My depth is in EIP-2535 Diamonds and ERC-4626 vaults, with working knowledge of ERC-7579 / ERC-4337 modular accounts and composable DeFi integration across DEXs, lending, yield, and cross-chain. At [Blok Capital](https://github.com/BLOKCapital) I architected a modular multichain wealth-management protocol: Diamond proxy vaults with a CREATE2 factory, a DAO-governed Facet Registry, onchain indices with automated rebalancing, and cross-chain USDC via CCTP and CCIP. Currently building an autonomous, market-cap-weighted index vault, and studying zero-knowledge proofs on the side.
+Smart contract engineer on EVM chains, focused on vaults and structured products: capital protection, tranching, and curated lending. Previously at [Blok Capital](https://github.com/BLOKCapital), where I co-architected a modular multichain wealth management protocol (Diamond proxy vaults, a DAO-governed Facet Registry, multiple yield strategies, onchain indices with automated rebalancing, cross-chain USDC via CCTP and CCIP). Since then I have gone deep on the structured-products side of DeFi, building and writing about the machinery that lets serious capital come onchain.
+
+---
+
+## What I'm building
+
+**CPPI Capital-Protected Vault:** an onchain vault that defends a floor without liquidations, rebalancing between a risky and a safe asset by rule (wstETH for staking yield, a Pendle PT for a fixed rate). Backtested across 104 rolling 12-month terms with a jump-diffusion model. Now extending it with tranching, so a junior tranche absorbs the gap risk a rebalancing rule cannot.
+
+**Index Protocol:** a pooled, async market-cap index vault on ERC-7540, with a capping and free-float methodology engine and CoW-based rebalancing. Designed around the supply oracle as the central risk.
+
+---
+
+## Writing
+
+Long-form on vault architecture and structured products.
+
+- **[The Road to the Complete Vault](https://x.com/0xjayeshyadav/status/2065105243067883681)** — the vault standard from ERC-4626 to 7540/7575/6909 to BoringVault and the curator era, into a rubric for a complete vault.
+- **[Onchain Lending is Missing CPPI: A Loan That Defends Its Own Collateral](https://x.com/0xjayeshyadav/status/2062157592936550599)** — why capital protection gates institutional capital.
+- **[A Portfolio That Defends Itself](https://x.com/0xjayeshyadav/status/2074846676251234768)** — capital protection as a portfolio that holds its own floor by rule.
+
+More on [X / Twitter](https://x.com/0xjayeshyadav).
 
 ---
 
 ## Selected work
 
-**Index Protocol** — a pooled, autonomous, market-cap-weighted index vault on Ethereum mainnet. An ERC-7540 async superset of ERC-4626 with two-lane liquidity, an on-chain methodology engine (iterative capping with exact invariants and free-float weighting), and a layered circulating-supply oracle (trustless on-chain derivation, multi-source median with divergence freeze, and rate-limited containment). Core vault, methodology, and oracle are implemented and tested; CoW-settled rebalancing is in progress. → [repo](https://github.com/jayeshy14/index-protocol)
-
-**Diamond Storage Collision Detector** — a static-analysis tool that catches storage-slot collisions across EIP-2535 facets before deployment, where a collision silently corrupts shared state across facets. → [repo](https://github.com/jayeshy14/Diamond-Storage-Detector)
-
-**Vault Router** — an ERC-4626 yield vault on the Diamond proxy pattern, routing deposits across Morpho Blue, Aave V3, and Pendle PT strategy facets on Arbitrum, with curator-governed allocation, per-strategy caps, and idle-reserve enforcement. → [repo](https://github.com/jayeshy14/Vault-Router)
-
-**Uniswap V4 Diamond Hook** — an upgradeable V4 hook framework on EIP-2535. The hook address stays permanent via a once-mined CREATE2 salt while logic upgrades through `diamondCut`, eliminating pool migration on hook upgrades. → [repo](https://github.com/jayeshy14/uniswap-v4-hook-diamond)
+| Repo | What it is |
+|------|------------|
+| [cppi-vault](https://github.com/jayeshy14/cppi-vault) | CPPI capital-protected vault: rule-based floor defense, wstETH + Pendle PT |
+| [index-protocol](https://github.com/jayeshy14/index-protocol) | Async ERC-7540 market-cap index vault with methodology engine and CoW rebalancing |
+| [Diamond-Storage-Detector](https://github.com/jayeshy14/Diamond-Storage-Detector) | Static-analysis CLI for storage-slot collisions across EIP-2535 facets (Nick Mudge endorsed) |
+| [Vault-Router](https://github.com/jayeshy14/Vault-Router) | ERC-4626 + EIP-2535 Diamond vault routing across Morpho, Aave, Pendle |
 
 ---
 
 ## Stack
 
-**Depth** &nbsp; EIP-2535 Diamonds · ERC-4626 vaults · storage layout and upgrade safety (EIP-1967, ERC-7201) · Foundry fuzz and invariant testing
-**Working knowledge** &nbsp; ERC-7579 / ERC-4337 modular accounts · Chainlink oracles · CCTP / CCIP cross-chain
-**Languages** &nbsp; Solidity · Rust · TypeScript · JavaScript
-**Tooling** &nbsp; Foundry · Hardhat · OpenZeppelin · Dune · Tenderly
-**DeFi** &nbsp; Uniswap V4 · Morpho · Aave · Pendle · Camelot · Chainlink
+**Languages** &nbsp; Solidity · Rust · TypeScript  
+**Frameworks** &nbsp; Foundry · Hardhat · OpenZeppelin  
+**Vault standards** &nbsp; ERC-4626 · ERC-7540 · ERC-7575 · ERC-6909  
+**Other standards** &nbsp; EIP-2535 · ERC-7579 · ERC-4337 · ERC-1967  
+**DeFi protocols** &nbsp; Morpho · Aave · Pendle · Uniswap V4 · Chainlink  
+**Cross-chain** &nbsp; CCTP · CCIP  
+**Infra** &nbsp; Dune · Tenderly · The Graph · Foundry fuzzing  
+
+---
+
+## Certifications
+
+Uniswap V4 Incubator (Atrium) · Smart Contract Security, Advanced Foundry, Advanced Uniswap V3 (Cyfrin Updraft) · Web3 Dev, Blockchain Security Expert, Fintech Expert (101 Blockchains)
 
 ---
 
 ## Reach me
 
 - **X / Twitter:** [@0xjayeshyadav](https://x.com/0xjayeshyadav)
-- **LinkedIn:** [linkedin.com/in/jayeshyadav](https://www.linkedin.com/in/jayeshyadav)
+- **LinkedIn:** [linkedin.com/in/jayeshy14](https://www.linkedin.com/in/jayeshy14)
 - **Email:** [jayeshnyadav497@gmail.com](mailto:jayeshnyadav497@gmail.com)
 
-Open to conversations on protocol design, the Diamond pattern at scale, and vault architecture.
+Open to conversations on vault architecture, structured products, capital protection, and tranching.
+
+---
