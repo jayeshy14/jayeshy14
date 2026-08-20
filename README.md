@@ -8,7 +8,7 @@ Smart contract engineer on EVM chains, focused on vaults and structured products
 
 ## What I'm building
 
-**CPPI Capital-Protected Vault:** an onchain vault that defends a floor without liquidations, rebalancing between a risky and a safe asset by rule (wstETH for staking yield, a Pendle PT for a fixed rate). Backtested across 104 rolling 12-month terms with a jump-diffusion model. Now extending it with tranching, so a junior tranche absorbs the gap risk a rebalancing rule cannot.
+**CPPI Capital-Protected Vault:** an onchain vault that defends a principal floor by rule, shifting capital between a risky and a safe asset as the buffer above the floor grows or shrinks (wstETH for staking yield, a Pendle PT for a fixed rate). Backtested across 104 rolling 12-month terms with a jump-diffusion model. Now extending it with tranching, so a junior tranche absorbs the gap risk a rebalancing rule cannot.
 
 **Index Protocol:** a pooled, async market-cap index vault on ERC-7540, with a capping and free-float methodology engine and CoW-based rebalancing. Designed around the supply oracle as the central risk.
 
